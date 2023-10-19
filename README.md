@@ -16,7 +16,7 @@ Macro F1 Score
 - 전략
   - 사용 모델 : roberta-large (https://huggingface.co/roberta-large)
   - PEFT 방법 중 하나인 LoRA(https://github.com/microsoft/LoRA) 사용해서 Finetuning
-    - 해당 repo에서 제안하는 default 세팅처럼 self-attention의 query와 value 뿐만 아니라 key와 classifier에도 LoRA 삽입.
+    - self-attention의 query와 value 뿐만 아니라 key와 classifier에도 LoRA 삽입.
   - 주요 Hyperparameter
     - rank : 8
     - alpha : 32
@@ -25,6 +25,7 @@ Macro F1 Score
     - epochs : 60 (early stopping : 5, 20번째 epoch에서 중단) 
     - seed : 42
   - Train/Eval Metric
+    - Best Eval f1 : 0.8641
     <img src='./roberta-largelora8_a32_qkv_ga_train.png'>
     <img src='./roberta-largelora8_a32_qkv_ga_evalloss.png'>
     <img src='./2023_10_16_01_43_roberta-largelora8_a32_qkv_ga_.png'>
