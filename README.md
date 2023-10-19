@@ -25,6 +25,6 @@ Macro F1 Score
     - epochs : 60 (early stopping : 5, 20번째 epoch에서 중단) 
     - seed : 42
   - Train/Eval Metric
-    <img src='/home/lab/bumjun/toy_project/DACON_Yongin_SW-AI_Hackathon/roberta-largelora8_a32_qkv_ga_train.png'>
-    <img src='/home/lab/bumjun/toy_project/DACON_Yongin_SW-AI_Hackathon/roberta-largelora8_a32_qkv_ga_evalloss.png'>
-    <img src='/home/lab/bumjun/toy_project/DACON_Yongin_SW-AI_Hackathon/2023_10_16_01_43_roberta-largelora8_a32_qkv_ga_.png'>
+    <img src='./roberta-largelora8_a32_qkv_ga_train.png'>
+    <img src='./roberta-largelora8_a32_qkv_ga_evalloss.png'>
+    <img src='./2023_10_16_01_43_roberta-largelora8_a32_qkv_ga_.png'>
