@@ -22,8 +22,12 @@ Macro F1 Score
   - 주요 Hyperparameter
     - rank : 8
     - alpha : 32
+      - scailng을 담당하는 변수. 8,16,32로 실험했고 32가 최적.
+    - batch size : 8
     - gradient accumulation step : 32
+      - GPU 리소스 한계로 batch size를 8로 설정하고, gradient accumulation step을 32로 설정. (2,4,8,16,32를 실험해봤는데 32가 가장 좋았음)
     - learning rate : 4e-4
+      - rank 8일 때 최적의 learning rate (출처: Lora-FA https://arxiv.org/abs/2308.03303)
     - epochs : 60 (early stopping : 5, 20번째 epoch에서 중단) 
     - seed : 42
 - Train/Eval Metric
