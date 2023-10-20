@@ -31,7 +31,7 @@ class TweetDataset(torch.utils.data.Dataset):
         return len(self.encodings.input_ids)
 
 
-def ready_data(test_size=0.05, random_state=42):
+def ready_data(test_size=0.1, random_state=42):
     train = pd.read_csv("train.csv")
     test = pd.read_csv("test.csv")
     # train_texts = train['text'].tolist()
